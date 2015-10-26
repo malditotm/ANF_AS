@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainLyt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.anf.PromosAct" >
+
+    <TextView
+        android:id="@+id/welcomeLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/O" />
+    
+    <TextView
+        android:id="@+id/userNameVal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/welcomeLbl"
+        android:layout_alignTop="@+id/welcomeLbl"
+        android:layout_marginLeft="6dp"
+        android:text="@string/O" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignLeft="@+id/welcomeLbl"
+        android:layout_below="@+id/userNameVal"
+        android:layout_margin="10dp"        
+        android:padding="10dp"
+        android:background="@drawable/st_round_corner" >
+
+        <TextView
+            android:id="@+id/promosLbl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/act_promos_promos" />
+
+        <!--ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+	        android:layout_below="@+id/promosLbl"
+	        android:layout_marginTop="10dp"
+            android:layout_centerHorizontal="true" >
+
+	        <GridLayout
+	            android:id="@+id/gridLayout1"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content" >
+	        </GridLayout>
+        </ScrollView-->
+
+        <GridView
+            android:id="@+id/promosGV"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+	        android:layout_below="@+id/promosLbl"
+	        android:layout_marginTop="10dp"
+            android:layout_alignParentLeft="true"
+            android:columnWidth="150dp"
+            android:numColumns="auto_fit" >
+        </GridView>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleLarge"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

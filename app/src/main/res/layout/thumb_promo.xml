@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="150dp"
+    android:layout_height="170dp"
+    android:layout_margin="10dp"
+    android:paddingBottom="3dp"
+    android:paddingRight="3dp"
+	android:gravity="center_horizontal"
+	    android:background="@drawable/st_drop_shadow" >
+    
+	<RelativeLayout
+	    android:layout_width="fill_parent"
+	    android:layout_height="fill_parent"
+	    android:paddingTop="10dp"
+	    android:gravity="center_horizontal"
+	    android:background="@drawable/st_thumb_shape" >
+
+	    <ImageView
+	        android:id="@+id/promoIV"
+	        android:layout_width="130dp"
+	        android:layout_height="100dp"
+	        android:layout_alignParentTop="true"
+	        android:layout_centerHorizontal="true"
+	        android:src="@drawable/img"
+	        android:adjustViewBounds="true"
+	        android:scaleType="centerCrop"
+	        android:contentDescription="@string/O" />
+	
+	    <TextView
+	        android:id="@+id/promoTitleVl"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_below="@+id/promoIV"
+	        android:layout_margin="10dp"
+	        android:layout_marginTop="5dp"
+	        android:layout_centerHorizontal="true"
+	        android:text="@string/O" />
+	
+	    <ProgressBar
+	        android:id="@+id/progressBar"
+	        style="?android:attr/progressBarStyleLarge"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_centerVertical="true"
+	        android:layout_centerHorizontal="true" />
+
+	</RelativeLayout>
+</RelativeLayout>

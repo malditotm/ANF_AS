@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>    
+    <!-- DB General strings -->
+	<string name="sql_db_name">promoCatalogue</string>
+    <string name="sql_db_directory">/data/data/com.example.anf/databases/promoCatalogue.db</string>
+	
+	
+    <!-- SQL CREATE strings -->
+    <string name="sql_createtable_promo">CREATE TABLE IF NOT EXISTS promo (_id INT PRIMARY KEY, idPromo INT, description TEXT, footer TEXT, button_target TEXT, button_title TEXT, title TEXT, imageURL TEXT, image TEXT);</string>
+    <string name="sql_droptable_promo">DROP TABLE IF EXISTS promo;</string>
+    
+	<!-- SQL Table key strings -->
+    <string name="sql_table_promo">promo</string>
+    
+    <!-- SQL Column keys strings -->
+    <string name="sql_column_promo_id">_id</string>
+    <string name="sql_column_promo_idPromo">idPromo</string>
+    <string name="sql_column_promo_description">description</string>
+    <string name="sql_column_promo_footer">footer</string>
+    <string name="sql_column_promo_button_target">button_target</string>
+    <string name="sql_column_promo_button_title">button_title</string>
+    <string name="sql_column_promo_title">title</string>
+    <string name="sql_column_promo_imageURL">imageURL</string>
+    <string name="sql_column_promo_image">image</string>
+    
+    
+    <!-- SQL SELECT strings -->
+	<string name="sql_select_all_promos">
+	    SELECT _id, idPromo, description, footer, button_target, button_title, title, imageURL, image
+	    FROM promo;
+    </string>
+	<string name="sql_select_promo">
+	    SELECT _id, idPromo, description, footer, button_target, button_title, title, imageURL, image
+	    FROM promo
+    </string>
+    
+    <!-- SQL UPDATE strings -->
+    <string name="sql_update_promo_image_whereclause">idPromo = ?</string>
+    
+    
+    
+</resources>

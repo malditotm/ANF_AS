@@ -1,0 +1,4 @@
+S:\SELIF\Docs\Ondskan\Dsktp\BrighterBrain\AnF\ANF1\app\build\intermediates\classes\debug
+S:\SELIF\Docs\Ondskan\Dsktp\BrighterBrain\AnF\ANF1\app\build\intermediates\pre-dexed\debug\gson-2.3.1-286aff057ee324a0d92a10e6e4170a80c1bb56da.jar
+S:\SELIF\Docs\Ondskan\Dsktp\BrighterBrain\AnF\ANF1\app\build\intermediates\pre-dexed\debug\commons-io-2.4-b796f4aecfea38c69896e44c2db25091d72e7016.jar
+S:\SELIF\Docs\Ondskan\Dsktp\BrighterBrain\AnF\ANF1\app\build\intermediates\pre-dexed\debug\support-v4-18.0.0-dcdff72ebf0b560fc08ed3b32caae0f80917ee0b.jar
