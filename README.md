@@ -1,6 +1,7 @@
 #Promotions app for Abercrombie & Fitch
 Project for A&F coding test, 
 It uses SQLite for data persistency of the feed info, SharedPreferences for cachedata of the user name and uses Intent extras for comunication between Activities. 
+
 *For parsing the JSon from the servet I try to do it by a simple library called GSon but the source is not properly structured, then a specific parser was implemented to handle the errors in the source. 
 
 # Start Screen
@@ -10,8 +11,12 @@ Ask for the name of the user if it was already set this screen only shows a load
 
 # Main Screen
 If the user has already set its name, the name is concatenated to the welcome string.
+
 The data fetched from the service is displayed in a grid, being each item a button.
-If the app has no info saved and it cannot reach the server a slideshow with products is shown until the device reaches the server.
+
+If the app has no info saved and it cannot reach the server a slideshow with products is shown until the device reaches the server. After the image is aquiered it is saved in the SQLite DB.
+
+If the app isn't close or it has already fetched, the promotions are loaded from the local saved data.
 
 ![img002](https://cloud.githubusercontent.com/assets/7500868/10745022/d07882fa-7c03-11e5-8e7a-5fb01ba75685.png)
 
@@ -21,7 +26,8 @@ The app runs separated threads to fetch the images of each promotion
 
 # Detail Promo screen
 The complete information of the promotion is displayed in this screen.
-* The feed has html code on it that is displayed in the screenshot, it can be suppressed but a more detail of the issue is needed
+
+* The feed has html code on it that is displayed in the screenshot, it can be suppressed but a more detail to handle the issue is needed
 
 ![img004](https://cloud.githubusercontent.com/assets/7500868/10745023/d07b05ca-7c03-11e5-8ee5-3cf95c22ceef.png)
 
