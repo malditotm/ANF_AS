@@ -1,5 +1,6 @@
 #Promotions app for Abercrombie & Fitch
-Project for A&F coding test, 
+Project for A&F coding test, this is a Android Studio's project.
+
 It uses SQLite for data persistence of the feed info, SharedPreferences for cachedata of the user name and uses Intent extras for comunication between Activities. 
 
 *For parsing the JSon from the servet I try to do it by a simple library called GSon but the source is not properly structured, then a specific parser was implemented to handle the errors in the source. 
